@@ -6,7 +6,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
   admin_username        = "adminuser"
   network_interface_ids = [azurerm_network_interface.nic.id]
 
-  custom_data = filebase64("./templates/dependencies.tpl")
+  custom_data = filebase64("../templates/dependencies.tpl")
 
   admin_ssh_key {
     username   = "adminuser"
