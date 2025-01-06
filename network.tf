@@ -48,6 +48,7 @@ resource "azurerm_public_ip" "publicip" {
   resource_group_name = azurerm_resource_group.rg.name
   location            = azurerm_resource_group.rg.location
   allocation_method   = "Dynamic"
+  domain_name_label   = "dimitrievljupce"
 
   tags = {
     environment = "dev"
